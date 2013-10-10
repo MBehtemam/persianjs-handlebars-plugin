@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="../lib/jquery.js"></script>
+	<script src="../lib/handlebars.js"></script>
+	<script src="../lib/persian.js"></script>
+	<script src="../lib/persianjs-handlebarsjs-plugin.js"></script>
+</head>
+<body>
+	<script id="main" type="text/x-handlebars" data-template-name="index">
+		<div style="direction:rtl;">
+					"علی" => {{arabicChar "علی"}}<br/>
+		'1245' => {{englishNumber '1245'}}<br/>
+		'٣٤٥' => {{arabicNumber '٣٤٥'}}<br/>
+		"علي٤2465" => {{toPersian "علي٤2465"}}<br/>
+		</div>
+	</script>
+	<script>
+		$(function(){
+			var source = $('#main').html();
+			var template = Handlebars.compile(source);
+			$('body').append(template);
+		});
+	</script>
+</body>
+</html>
