@@ -4,7 +4,7 @@ persianjs-handlebars-plugin
 Persianjs HandleBars Plugin
 
 ##How to use
-incluede 'persianjs-handlebarsjs-plugin.js' after 'persian.js' and 'Handlebars.js'
+incluede `persianjs-handlebarsjs-plugin.js` after `persian.js` and `Handlebars.js`
 
 ###Functions
 
